@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CheapKraft</title>
+</head>
+<body>
+    <div class="map">
+        <!-- <iframe src="http://maps.google.com/maps?q=28.510630,77.168678&z=16&output=embed"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11696766.365161305!2d84.35224894749717!3d24.891774294916726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1667820680443!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="form">
+            <form action="prices.html" id="form">
+                <label for="from">FROM</label>
+                <input type="text" id="from" name="from" placeholder="Current Location" required>
+                <br><br><br>
+                <label for="to">TO</label>
+                <input type="text" id="to" name="to" placeholder="Final Destination" required>
+                <br><br><br>
+                <label for="date">DATE</label>
+                <input type="date" id="date" name="date" placeholder="Date of Booking" required>
+                <br><br><br>
+                <div>
+                    <button type="submit" id="search" value="submit" class="slide_from_left" name="Search">Search</button>
+                </div>                   
+            </form>
+        </div>
+    </div>
+    <script src="./js/formInputParse.js"></script>
+</body>
+</html>
